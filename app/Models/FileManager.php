@@ -6,7 +6,7 @@ use App\Jobs\removeArchiveAfterDownload;
 
 class FileManager
 {
-    public function read(string $path = "C:/") {
+    public function read($path = "C:/") {
         $dir = scandir($path);
         $result = [];
         foreach ($dir as $item) {
